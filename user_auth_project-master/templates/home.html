@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="imagine_cup_round1.">
+    <meta name="author" content="Devcrud">
+    <title>user_authentication | home</title>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title> {% block title %} {% endblock %} </title> 
+  <style>
+    {% block css %} 
+    html,body {
+      height: 100%;
+  }
+  /* BACKGROUND GRADIENT   */
+  body.my-login-page {
+      background: rgb(0,153,255);
+      background: radial-gradient(circle, rgba(0,153,255,0.1390756986388305) 32%, rgba(0,11,117,0.1474790599833683) 100%);
+      font-size: 14px;
+  }
+  
+  .my-login-page .brand {
+      width: 111px;
+      height: 111px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin: 40px auto;
+      box-shadow: 0 5px 10px rgba(0,0,0,.10);
+      position: relative;
+      z-index: 1;
+      transition: 3s;
+      background: rgba(36,39,52,0.3);
+  }
+  
+  .my-login-page .brand img {
+      width: 100%;
+  }
+  
+  .my-login-page .card-wrapper {
+      width: 450px;
+  }
+  
+  .my-login-page .card {
+      border-color: transparent;
+      box-shadow: 0 4px 8px rgba(0,0,0,.05);
+  }
+  
+  .my-login-page .card.fat {
+      padding: 10px;
+      background: rgba(36,39,52,0.3);;
+      border-radius: 35px;
+  }
+  
+  .my-login-page .card .card-title {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+  
+  
+  }
+  
+  .my-login-page .form-control {
+      border-width: 2.3px;
+  }
+  
+  .my-login-page .form-group label {
+      width: 100%;
+  }
+  
+  .my-login-page .btn.btn-block {
+      padding: 12px 10px;
+  }
+  
+  .my-login-page .footer {
+      margin: 40px 0;
+      color: #888;
+      text-align: center;
+  }
+  
+  @media screen and (max-width: 425px) {
+      .my-login-page .card-wrapper {
+          width: 90%;
+          margin: 0 auto;
+      }
+  }
+  
+  @media screen and (max-width: 320px) {
+      .my-login-page .card.fat {
+          padding: 0;
+      }
+  
+      .my-login-page .card.fat .card-body {
+          padding: 15px;
+      }
+  }
+  
+  #decoration {
+      text-decoration: none;
+  }
+  /* JS CLASS FOR ROTATE AVATAR PART ( YOU CAN REMOVE IF YOU DONT LIKE IT :) */
+  .hover{
+      transition: 4s;
+      transform: rotate(360deg);
+      position: relative;
+  }
+  /*--------------------------------------------------------------
+  # Footer 
+  (YOU CAN REMOVE THIS PART IF U WANT TO USE THIS PEN IN YOUR SITE , ITS JUST MY BADGE :))) )
+  --------------------------------------------------------------*/
+  body #footer {
+      background: rgba(36,39,52,0.3);
+      color: black;
+      font-size: 14px;
+      text-align: center;
+      padding: 30px 0;
+      border-radius: 35px;
+      position: relative;
+      bottom: 0;
+  
+  }
+  
+  #footer h3 {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--font-light);
+      position: relative;
+      font-family: "Poppins", sans-serif;
+      padding: 0;
+      margin: 0 0 15px 0;
+  }
+  
+  #footer p {
+      font-size: 15px;
+      font-style: italic;
+      padding: 0;
+      margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links {
+      margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: var(--light-color);
+      color: black;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+  }
+  
+  #footer .social-links a:hover {
+      background: var(--dark-color);
+      color: #888;
+      text-decoration: none;
+  }
+  
+  #footer .copyright {
+      margin: 0 0 5px 0;
+  }
+  
+  #footer .credits {
+      font-size: 13px;
+  }
+  #footer a {
+      text-decoration: none;
+  }
+  .svg-bg {
+      position: fixed;
+      bottom: 0;
+      z-index: -2;
+  }
+    {% endblock %} </style>
+
+
+
+{% block body %}{% endblock body %}
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Template Javascript -->
